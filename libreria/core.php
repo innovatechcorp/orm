@@ -1,2 +1,7 @@
 <?php
-echo "correcto core";
+define("APP_RUTA",RUTA_BASE."app/");
+define("VISTA_RUTA",RUTA_BASE."view/");
+define("RUTA",APP_RUTA."rutas/");
+
+include "Ruta.php";
+include RUTA."rutas.php";
