@@ -1,8 +1,9 @@
 <?php
+include "../config/config.php";
 class Conexion{
     public static function conectar(){
         try{
-            $cn = new PDO("mysql:host=localhost;dbname=bd_orm","root","");
+            $cn = new PDO("mysql:host=".HOST.";dbname=".DB,USER,PASSWORD);
         }catch(PDOException $ex){
             die($ex->getMessage());
         }
